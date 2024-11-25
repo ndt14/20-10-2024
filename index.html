@@ -32,15 +32,10 @@
         /* z-index: -1; */
       }
 
-      /* Thu nhỏ ảnh nền trên thiết bị máy tính */
-      @media (min-width: 768px) {
-        body::before {
-          background-size: 40%; /* Giảm kích thước ảnh nền xuống 80% */
-        }
-      }
       @media (max-width: 767px) {
         body::before {
-          background-size: 100%; /* Giảm kích thước ảnh nền xuống 80% */
+          background-size: 100% !important;
+          background-size: cover;
         }
       }
       .box {
